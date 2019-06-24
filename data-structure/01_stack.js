@@ -54,6 +54,8 @@ class Stack {
     }
 }
 
+module.exports = Stack;
+
 // 测试用例
 // let stack = new Stack();
 // stack.push(1);
