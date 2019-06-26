@@ -52,6 +52,19 @@ class MyArray<T> {
         this.add(0, e);
     }
 
+    // 获取数组最后一个元素
+    public getLast(): T {
+        return this.data[this.size - 1];
+    }
+
+    // 获取数组中的任意元素
+    public get(index: number): T {
+        if (index < 0 || index >= this.size) {
+            throw new Error('Get failed. Index is illegal.');
+        }
+        return this.data[index];
+    }
+
     // 修改index索引位置的元素为e
     public set(index: number, e: T): void {
         if (index < 0 || index >= this.size) {
