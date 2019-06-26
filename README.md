@@ -8,7 +8,7 @@ algorithm and data structure 算法和数据结构
 - [x] 数组
 - [x] 栈
 - [x] 队列
-- [ ] 循环队列
+- [x] 循环队列
 - [ ] 链表
 - [ ] 树
 - [ ] 图
