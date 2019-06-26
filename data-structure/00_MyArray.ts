@@ -57,6 +57,11 @@ class MyArray<T> {
         return this.data[this.size - 1];
     }
 
+    // 获取数组的第一个元素
+    public getFirst(): T {
+        return this.data[0];
+    }
+
     // 获取数组中的任意元素
     public get(index: number): T {
         if (index < 0 || index >= this.size) {

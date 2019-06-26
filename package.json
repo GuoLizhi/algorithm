@@ -1,0 +1,19 @@
+{
+  "name": "algorithm",
+  "version": "1.0.0",
+  "description": "algorithm and data structure 算法和数据结构",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf ./dist/ && tsc ./data-structure/*.ts --outDir ./dist -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuoLizhi/algorithm.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GuoLizhi/algorithm/issues"
+  },
+  "homepage": "https://github.com/GuoLizhi/algorithm#readme"
+}
