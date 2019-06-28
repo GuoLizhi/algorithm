@@ -9,6 +9,6 @@ algorithm and data structure 算法和数据结构
 - [x] 栈
 - [x] 队列
 - [x] 循环队列
-- [ ] 链表
+- [x] 链表
 - [ ] 树
 - [ ] 图
