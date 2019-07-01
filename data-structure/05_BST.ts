@@ -317,6 +317,8 @@ class BST<E> {
     }
 }
 
+export default BST;
+
 let bst = new BST<number>();
 let nums: Array<number> = [5, 3, 6, 2, 4, 8];
 for (let i = 0; i < nums.length; i++) {
