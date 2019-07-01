@@ -209,7 +209,7 @@ class BST<E> {
     // 从二分搜索树中删除最小值所在的节点，返回最小值
     public removeMin(): E {
         let ret: E = this.minimum();
-        this.removeMinNode(this.root);
+        this.root = this.removeMinNode(this.root);
         return ret;
     }
 
@@ -229,7 +229,7 @@ class BST<E> {
 
     public removeMax(): E {
         let ret: E = this.maximum();
-        this.removeMaxNode(this.root);
+        this.root = this.removeMaxNode(this.root);
         return ret;
     }
 
@@ -249,7 +249,7 @@ class BST<E> {
 
     // 删除二分搜索树中元素为e的节点
     public remove(e: E): void {
-        this.removeNode(this.root, e);
+        this.root = this.removeNode(this.root, e);
     }
 
     // 删除以node为根的二分搜索树中值为e的节点，递归算法
@@ -331,12 +331,15 @@ for (let i = 0; i < nums.length; i++) {
 // bst.levelOrder();
 // bst.preOrderNR();
 
+// let arr: number[] = [];
 for (let i = 0; i < 50; i++) {
-    bst.add(Math.floor(100 * Math.random()));
+    let r = Math.floor(100 * Math.random());
+    bst.add(r);
+    // arr.push(r);
 }
 
 let arr = [];
 while(!bst.isEmpty()) {
-    arr.push(bst.removeMax());
+    arr.push(bst.removeMin());
 }
 console.log(arr);
