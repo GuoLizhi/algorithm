@@ -1,6 +1,5 @@
 // 基于二分搜索树实现的map
-import BST from '../data-structure/05_BST';
-interface Map<K, V> {
+interface MyMap<K, V> {
     add(key: K, value: V): void;
     remove(key: K): V;
     contains(key: K): boolean;
@@ -22,7 +21,7 @@ class BSTMapNode<K, V> {
     }
 }
 
-class BSTMap<K, V> implements Map<K, V> {
+class BSTMap<K, V> implements MyMap<K, V> {
     private root: BSTMapNode<K, V> = null;
     private size: number = 0;
 
@@ -159,3 +158,5 @@ class BSTMap<K, V> implements Map<K, V> {
         return successor;
     }
 }
+
+export default BSTMap;
