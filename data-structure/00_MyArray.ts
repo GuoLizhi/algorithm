@@ -147,6 +147,16 @@ class MyArray<T> {
         this.data = newData;
     }
 
+    // 将数组中的某两个元素交换
+    public swap(i: number, j: number): void {
+        if (i >= this.size || j >= this.size || i < 0 || j < 0) {
+            throw new Error('Wrong index...');
+        }
+        let tmp = this.data[i];
+        this.data[i] = this.data[j];
+        this.data[j] = tmp;
+    }
+
     public toString(): void {
         let str = ``;
         str += `Array: size = ${this.size}, capacity = ${this.data.length}\n`;
