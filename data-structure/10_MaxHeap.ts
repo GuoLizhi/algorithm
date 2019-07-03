@@ -119,5 +119,16 @@ class MaxHeap<E> {
     }
 
     // 将任意数组整理成堆的形状
-    
+    public generateHeap(arr: MyArray<E>): MyArray<E> {
+        let data: MyArray<E> = new MyArray<E>(arr.getSize());
+        for (let i = 0; i < arr.getSize(); i++) {
+            data.set(i, arr[i]);
+        }
+
+        for (let i = this.parent(arr.getSize() - 1); i >= 0; i--) {
+            this.siftDown(i);
+        }
+
+        return data;
+    }
 }
