@@ -20,4 +20,4 @@ algorithm and data structure 算法和数据结构
 - [x] 线段树
 - [x] Trie
 - [x] 并查集
-- [ ] 图
+- [x] AVL
