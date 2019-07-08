@@ -132,3 +132,5 @@ class MaxHeap<E> {
         return data;
     }
 }
+
+export default MaxHeap;
