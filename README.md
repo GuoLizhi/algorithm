@@ -17,4 +17,5 @@ algorithm and data structure 算法和数据结构
 - [x] 基于二分搜索树的映射
 - [x] 二叉堆
 - [x] 基于二叉堆的优先队列
+- [x] 线段树
 - [ ] 图
