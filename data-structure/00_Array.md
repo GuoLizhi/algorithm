@@ -31,7 +31,7 @@ public add(index: number, e: T) {
 }
 ```
 
-![数组-插入](http://cdn.lznism.com/%E6%95%B0%E7%BB%84-%E6%B7%BB%E5%8A%A0.png)
+![数组-插入](http://www.lznism.com/image/数组-插入.png)
 
 在数组中添加元素，最好情况下，用户只用操作一次，时间复杂度是O(1)；最差的情况下，用户需要操作size次，时间复杂度是O(n)
 
@@ -71,7 +71,7 @@ public remove(index: number): T {
 }
 ```
 
-![数组-删除](https://cdn.sinaimg.cn.52ecy.cn/large/005BYqpgly1g4tqoaja0zj30yk0dadgr.jpg)
+![数组-删除](http://www.lznism.com/image/数组-删除.png)
 
 在数组中删除元素，最好情况下，用户只用操作一次，时间复杂度是O(1)；最差的情况下，用户需要操作size次，时间复杂度是O(n)        
 当数组中的元素个数仅为数组容量的1/4时，我们需要对数组进行缩容为1/2操作
