@@ -22,3 +22,4 @@ algorithm and data structure 算法和数据结构
 - [x] 并查集
 - [x] AVL
 - [x] 基于平衡二叉树的Map
+- [x] 基于平衡二叉树的Set
