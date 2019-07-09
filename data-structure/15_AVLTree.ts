@@ -284,3 +284,5 @@ class AVLTree<K, V> {
         return x;
     }
 }
+
+export default AVLTree;
