@@ -1,7 +1,7 @@
 /**
  * 使用数组实现的二叉堆
  */
-import MyArray from './00_MyArray';
+import MyArray from './00_Array';
 
 class MaxHeap<E> {
     private data: MyArray<E>;

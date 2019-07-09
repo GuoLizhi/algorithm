@@ -3,7 +3,7 @@ class MyArray<T> {
     private size: number = 0;
 
     // 构造函数，传入数组容量capacity
-    constructor(capacity) {
+    constructor(capacity = 10) {
         this.data = new Array(capacity);
     }
 

@@ -1,4 +1,4 @@
-import MyArray from './00_MyArray';
+import MyArray from './00_Array';
 
 interface Queue<E> {
     getSize(): number;
