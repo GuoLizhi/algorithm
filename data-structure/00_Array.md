@@ -31,7 +31,7 @@ public add(index: number, e: T) {
 }
 ```
 
-![数组-插入](http://www.lznism.com/image/数组-插入.png)
+![数组-插入](http://www.lznism.com/image/数组-添加.png)
 
 在数组中添加元素，最好情况下，用户只用操作一次，时间复杂度是O(1)；最差的情况下，用户需要操作size次，时间复杂度是O(n)
 
