@@ -66,8 +66,28 @@ class AVLTree<K, V> {
 
         // 更新平衡因子
         let balanceFactor: number = this.getBalanceFactor(node);
-        if (Math.abs(balanceFactor) > 1) {
-            console.log(`unbalanced: ${balanceFactor}`);
+
+        // 平衡维护
+        // LL
+        if (balanceFactor > 1 && this.getBalanceFactor(node.left) >= 0) {
+            return this.rightRotate(node);
+        }
+
+        // RR
+        if (balanceFactor < -1 && this.getBalanceFactor(node.right) <= 0) {
+            return this.leftRotate(node);
+        }
+
+        // LR
+        if (balanceFactor > 1 && this.getBalanceFactor(node.left) < 0) {
+            node.left = this.leftRotate(node.left);
+            return this.rightRotate(node);
+        }
+
+        // RL
+        if (balanceFactor < -1 && this.getBalanceFactor(node.right) > 0) {
+            node.right = this.rightRotate(node.right);
+            return this.leftRotate(node);
         }
 
         return node;
@@ -144,12 +164,13 @@ class AVLTree<K, V> {
             return null;
         }
 
+        let retNode: AVLTreeNode<K, V>;
         if (key < node.key) {
             node.left = this.removeNode(node.left, key);
-            return node;
+            retNode = node;
         } else if (key > node.key) {
             node.right = this.removeNode(node.right, key);
-            return node;
+            retNode = node;
         } else {
 
             // 待删除节点左子树为null的情况
@@ -157,27 +178,109 @@ class AVLTree<K, V> {
                 let rightNode: AVLTreeNode<K, V> = node.right;
                 node.right = null;
                 this.size--;
-                return rightNode;
+                retNode = rightNode;
             }
 
             // 待删除节点右子树为null的情况
-            if (node.right === null) {
+            else if (node.right === null) {
                 let leftNode: AVLTreeNode<K, V> = node.left;
                 node.left = null;
                 this.size--;
-                return leftNode;
+                retNode = leftNode;
             }
 
             // 待删除节点左右子树均不为空的情况
 
             // 找到比待删除节点大的最小节点, 即待删除节点右子树的最小节点
             // 用这个节点顶替待删除节点的位置
-            let successor: AVLTreeNode<K, V> = this.minimum(node.right);
-            successor.right = this.removeMin(node.right);
-            successor.left = node.left;
-
-            node.left = node.right = null;
-            return successor;
+            else {
+                let successor: AVLTreeNode<K, V> = this.minimum(node.right);
+                successor.right = this.removeNode(node.right, successor.key);
+                successor.left = node.left;
+    
+                node.left = node.right = null;
+                retNode = successor;
+            }
         }
+
+        if (retNode === null) {
+            return null;
+        }
+
+        retNode.height = 1 + Math.max(this.getHeight(retNode.left), this.getHeight(retNode.right));
+        
+        // 计算平衡因子
+        let balanceFactor = this.getBalanceFactor(retNode);
+
+        // 平衡维护
+        // LL
+        if (balanceFactor > 1 && this.getBalanceFactor(retNode.left) >= 0) {
+            return this.rightRotate(retNode);
+        }
+
+        // RR
+        if (balanceFactor < -1 && this.getBalanceFactor(retNode.right) <= 0) {
+            return this.leftRotate(retNode);
+        }
+
+        // LR
+        if (balanceFactor > 1 && this.getBalanceFactor(retNode.left) < 0) {
+            retNode.left = this.rightRotate(retNode.left);
+            return this.rightRotate(retNode);
+        }
+
+        // RL
+        if (balanceFactor < -1 && this.getBalanceFactor(retNode.right) > 0) {
+            retNode.right = this.rightRotate(retNode.right);
+            return this.leftRotate(retNode);
+        }
+
+        return retNode;
+    }
+
+    // 对节点y进行向左旋转的操作，返回旋转后的新节点
+    //    y                             x
+    //  /  \                          /   \
+    // T1   x      向左旋转 (y)       y     z
+    //     / \   - - - - - - - ->   / \   / \
+    //   T2  z                     T1 T2 T3 T4
+    //      / \
+    //     T3 T4
+    private leftRotate(y: AVLTreeNode<K, V>): AVLTreeNode<K, V> {
+        let x: AVLTreeNode<K, V> = y.right;
+        let T2: AVLTreeNode<K, V> = x.left;
+
+        // 向左旋转的过程
+        x.left = y;
+        y.right = T2;
+
+        // 更新height
+        y.height = Math.max(this.getHeight(y.left), this.getHeight(y.right)) + 1;
+        x.height = Math.max(this.getHeight(x.left), this.getHeight(x.right)) + 1;
+
+        return x;
+    }
+
+    // 对节点y进行向右旋转操作，返回旋转后新的根节点x
+    //        y                              x
+    //       / \                           /   \
+    //      x   T4     向右旋转 (y)        z     y
+    //     / \       - - - - - - - ->    / \   / \
+    //    z   T3                       T1  T2 T3 T4
+    //   / \
+    // T1   T2
+    private rightRotate(y: AVLTreeNode<K, V>): AVLTreeNode<K, V> {
+        let x: AVLTreeNode<K, V> = y.left;
+        let T3: AVLTreeNode<K, V> = x.right;
+
+        // 向右旋转的过程
+        x.right = y;
+        y.left = T3;
+
+        // 更新height
+        y.height = Math.max(this.getHeight(y.left), this.getHeight(y.right)) + 1;
+        x.height = Math.max(this.getHeight(x.left), this.getHeight(x.right)) + 1;
+
+        return x;
     }
 }
