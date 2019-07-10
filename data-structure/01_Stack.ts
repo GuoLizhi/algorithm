@@ -11,7 +11,7 @@ interface Stack<E> {
 class ArrayStack<E> implements Stack<E> {
     private array: MyArray<E>;
 
-    constructor(capacity: number) {
+    constructor(capacity: number = 10) {
         this.array = new MyArray<E>(capacity);
     }
 

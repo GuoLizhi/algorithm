@@ -6,7 +6,7 @@ algorithm and data structure 算法和数据结构
 
 ### data-structure
 - [x] [数组](./data-structure/00_Array.md)
-- [x] 栈
+- [x] [栈](./data-structure/01_Stack.md)
 - [x] 队列
 - [x] 循环队列
 - [x] 链表
