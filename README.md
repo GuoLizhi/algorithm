@@ -8,7 +8,7 @@ algorithm and data structure 算法和数据结构
 - [x] [数组](./data-structure/00_Array.md)
 - [x] [栈](./data-structure/01_Stack.md)
 - [x] [队列](./data-structure/02_Queue.md)
-- [x] 循环队列
+- [x] [循环队列](./data-structure/02_Queue.md)
 - [x] 链表
 - [x] 二分搜索树
 - [x] 基于二分搜索树的集合
