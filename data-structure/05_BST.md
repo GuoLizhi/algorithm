@@ -89,4 +89,60 @@ public preOrderNR(): void {
     }
 }
 ```
-这个遍历主要思路是不断的将节点push到栈中，如果栈不为空，那么就一直循环下去
+这个遍历主要思路是不断的将节点push到栈中，如果栈不为空，那么就一直循环下去          
+
+#### 5.在二分搜索树中删除元素
+在了解如何在二分搜索树中删除元素之前，我们需要了解如何在二分搜索树中找到和删除最小元素，在二分搜索树中寻找最小元素思路就是不断的递归当前元素的左孩子节点，直到某个节点的左孩子节点为null
+
+```ts
+// 寻找以node为根的二分搜索树的最小值节点
+private minimumNode(node: BSTNode<E>): BSTNode<E> {
+    if (node.left === null) {
+        return node;
+    }
+    return this.maximumNode(node.left);
+}
+```
+在二分搜索树中删除最小节点和寻找最小节点的思路差不多，不断的递归到最小节点，由于最小节点的左孩子节点为null，那么只需要返回最小节点的右子树即可
+
+```ts
+// 删除掉以node为根的二分搜索树中的最小节点
+// 返回删除节点后，新的二分搜索树的根
+private removeMinNode(node: BSTNode<E>): BSTNode<E> {
+    if (node.left === null) {
+        let rightNode: BSTNode<E> = node.right;
+        node.right = null;
+        this.size--;
+        return rightNode;
+    }
+
+    node.left = this.removeMinNode(node.left);
+    return node;
+}
+```
+
+下面我们来看如何删除二分搜索树的任意节点，最佳的方式仍然是递归。先来分析两个临界情况，如果待删除的元素左孩子节点为空，那么只需要返回待删除节点的右孩子；相反如果待删除的节点的右孩子节点为空，那么只需要返回左孩子节点即可
+
+```ts
+if (node.left === null) {
+    let rightNode: BSTNode<E> = node.right;
+    node.right = null;
+    this.size--;
+    return rightNode;
+}
+
+if (node.right === null) {
+    let leftNode: BSTNode<E> = node.left;
+    node.left = null;
+    this.size--;
+    return leftNode;
+}
+```
+
+删除左孩子和右孩子均不为null的节点，需要找到待删除节点右子树中的最小节点
+
+```ts
+let successor: BSTNode<E> = this.minimumNode(node.right);
+successor.right = this.removeMinNode(node.right);
+successor.left = node.left;
+```
