@@ -9,7 +9,7 @@ algorithm and data structure 算法和数据结构
 - [x] [栈](./data-structure/01_Stack.md)
 - [x] [队列](./data-structure/02_Queue.md)
 - [x] [循环队列](./data-structure/02_Queue.md)
-- [x] 链表
+- [x] [链表](./data-structure/04_LinkedList.md)
 - [x] 二分搜索树
 - [x] 基于二分搜索树的集合
 - [x] 基于链表的集合
