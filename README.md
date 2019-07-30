@@ -11,10 +11,10 @@ algorithm and data structure 算法和数据结构
 - [x] [循环队列](./data-structure/02_Queue.md)
 - [x] [链表](./data-structure/04_LinkedList.md)
 - [x] [二分搜索树](./data-structure/05_BST.md)
-- [x] 基于二分搜索树的集合
-- [x] 基于链表的集合
-- [x] 基于链表的映射
-- [x] 基于二分搜索树的映射
+- [x] [基于二分搜索树的集合](./data-structure/06_Map&Set.md)
+- [x] [基于链表的集合](./data-structure/06_Map&Set.md)
+- [x] [基于链表的映射](./data-structure/06_Map&Set.md)
+- [x] [基于二分搜索树的映射](./data-structure/06_Map&Set.md)
 - [x] 二叉堆
 - [x] 基于二叉堆的优先队列
 - [x] 线段树
