@@ -3,6 +3,8 @@
 - 当父节点的键值总是大于或等于任何一个子节点的键值时为`最大堆`
 - 当父节点的键值总是小于或等于任何一个子节点的键值时为`最小堆`
 
+![1.png](https://i.loli.net/2019/08/05/RYWshB9glm3e8wi.png)
+
 二叉堆一般用数组表示。那个二叉堆中总是存在以下规律，如果根节点的位置是0，那么第n个位置的子节点分别为`2n+1`和`2n+2`。第n个位置的父节点为`(n-1)/2`
 
 ```ts
@@ -117,5 +119,22 @@ public generateHeap(arr: MyArray<E>): MyArray<E> {
     }
 
     return data;
+}
+```
+
+#### 优先队列
+对于使用最大堆实现的优先队列，入队和出队都可以实现O(logN)的时间复杂度
+
+入队就是向最大堆中添加元素，添加之后，有一个`siftUp`的操作，时间复杂度是O(logN)
+
+出队是从最大堆中删除第一个元素，有一个`siftDown`的操作，时间复杂度是O(logN)
+
+```ts
+public enqueue(e: E): void {
+    this.maxHeap.add(e);
+}
+
+public dequeue(): E {
+    return this.maxHeap.extractMax();
 }
 ```
