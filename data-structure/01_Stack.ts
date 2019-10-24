@@ -1,4 +1,4 @@
-import MyArray from './00_Array';
+import MyArray from './Array/index';
 
 interface Stack<E> {
     getSize(): number;
