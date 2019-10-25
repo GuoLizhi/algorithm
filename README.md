@@ -1,25 +1,37 @@
-### algorithm
-algorithm and data structure 算法和数据结构
+### 项目简介
+本项目主要介绍算法与数据结构，项目中的算法和数据结构均由`typescript`实现。使用`typescript`的主要目的在于它的强类型控制以及一些高级特性比如：泛型，接口。所有的数据结构均手动实现，不会依赖原生JS中的数组方法。并且在原生数组的基础上，扩展实现了一些比较有用方法，比如数组的`remove()`和`add()`。
 
-### Project Introduction
-本项目旨在帮助自己学习算法与数据结构，项目中的算法和数据结构均由`typescript`实现。使用`typescript`的主要目的在于它的强类型控制以及一些高级特性比如：泛型，接口。所有的数据结构均手动实现，不会依赖原生JS中的数组方法。并且在原生数组的基础上，扩展实现了一些比较有用方法，比如数组的`remove()`和`add()`。
+### 数据结构
+- [x] [数组](./data-structure/Array)
+- [x] [栈](./data-structure/Stack)
+- [x] [队列](./data-structure/Queue)
+- [x] [链表](./data-structure/LinkedList)
+- [x] [二分搜索树](./data-structure/BinarySearchTree)
+- [x] [集合](./data-structure/Set)
+- [x] [映射](./data-structure/Map)
+- [x] [堆](./data-structure/Heap)
+- [x] [平衡二叉树](./data-structure/BalancedBinaryTree)
+- [x] [线段树](./data-structure/SegmentTree)
+- [x] [字典树](./data-structure/Trie)
+- [x] [并查集](./data-structure/UnionFind)
 
-### data-structure
-- [x] [数组](./data-structure/00_Array.md)
-- [x] [栈](./data-structure/01_Stack.md)
-- [x] [队列](./data-structure/02_Queue.md)
-- [x] [循环队列](./data-structure/02_Queue.md)
-- [x] [链表](./data-structure/04_LinkedList.md)
-- [x] [二分搜索树](./data-structure/05_BST.md)
-- [x] [基于二分搜索树的集合](./data-structure/06_Map&Set.md)
-- [x] [基于链表的集合](./data-structure/06_Map&Set.md)
-- [x] [基于链表的映射](./data-structure/06_Map&Set.md)
-- [x] [基于二分搜索树的映射](./data-structure/06_Map&Set.md)
-- [x] 二叉堆
-- [x] 基于二叉堆的优先队列
-- [x] 线段树
-- [x] Trie
-- [x] 并查集
-- [x] AVL
-- [x] 基于平衡二叉树的Map
-- [x] 基于平衡二叉树的Set
+### 算法
+- [x] [回溯算法](./algorithm/BackTracking)
+- [x] [广度优先搜索](./algorithm/BFS)
+- [x] [二分搜索树](./algorithm/BinarySearchTree)
+- [x] [深度优先搜索](./algorithm/DFS)
+- [x] [分治算法](./algorithm/DivideAndCouquer)
+- [x] [双索引算法](./algorithm/DoubleIndex)
+- [x] [动态规划](./algorithm/DynamicProgramming)
+- [x] [Hash表](./algorithm/HashTable)
+- [x] [堆](./algorithm/Heap)
+- [x] [链表](./algorithm/LinkedList)
+- [x] [队列](./algorithm/Queue)
+- [x] [递归](./algorithm/Recursion)
+- [x] [线段树](./algorithm/SegmentTree)
+- [x] [滑动窗口](./algorithm/SlidingWindow)
+- [x] [排序算法](./algorithm/Sort)
+- [x] [栈](./algorithm/Stack)
+- [x] [字符串](./algorithm/Strings)
+- [x] [字典树](./algorithm/Trie)
+- [x] [并查集](./algorithm/UnionFind)
