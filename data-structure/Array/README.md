@@ -31,7 +31,7 @@ public add(index: number, e: T) {
 }
 ```
 
-![数组-插入](http://www.lznism.com/image/数组-添加.png)
+![ArrayAdd.png](https://i.loli.net/2019/10/26/3jHVmhEupyfZA86.png)
 
 在数组中添加元素，最好情况下，即在数组的尾部添加元素，这样用户只用操作一次，时间复杂度是O(1)；最差的情况下，用户需要操作size次，时间复杂度是O(n)
 
@@ -79,7 +79,7 @@ public remove(index: number): T {
 }
 ```
 
-![数组-删除](http://www.lznism.com/image/数组-删除.png)
+![ArrayDelele.png](https://i.loli.net/2019/10/26/5OD1q7kvVRYrdeA.png)
 
 在数组中删除元素，最好情况下，用户只用操作一次，即删除数组尾部元素，时间复杂度是O(1)；最差的情况下，用户需要操作size次，即删除数组中的第一个元素，时间复杂度是O(n)        
 
