@@ -2,10 +2,12 @@
  * @author lizhi.guo@foxmail.com
  * @source https://leetcode-cn.com/problems/valid-parentheses/
  * @time   2019-10-25
+ *
+ * Time Complexity O(n)
+ * Space Complexity O(n)
+ *
+ * 将所有的左括号先入栈，如果碰到右括号时，则先出栈一个元素，与该右括号对比。
  */
-
-// 方法一：将所有的左括号先入栈，如果碰到右括号时，则先出栈一个元素，与该右括号对比。
-// 时间复杂度O(n) 空间复杂度O(n)
 var isValid = function(s: string): boolean {
   let stack = [];
   for (let i = 0; i < s.length; i++) {
