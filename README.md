@@ -16,6 +16,7 @@
 - [x] [并查集](./data-structure/UnionFind)
 
 ### 算法
+- [x] [数组](./algorithm/Array)
 - [x] [回溯算法](./algorithm/BackTracking)
 - [x] [广度优先搜索](./algorithm/BFS)
 - [x] [二分搜索树](./algorithm/BinarySearchTree)
