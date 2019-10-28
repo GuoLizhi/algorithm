@@ -52,7 +52,7 @@ wiki对于动态规划的定义：将原问题拆解成若干子问题，同时�
 
 对于动态规划，我们可以将其流程图归纳为
 
-<center>![动态规划.png](https://i.loli.net/2019/10/28/tdMLjNnGkhaqx8o.png)</center> 
+![动态规划.png](https://i.loli.net/2019/10/28/tdMLjNnGkhaqx8o.png)
 
 题目集合
 
