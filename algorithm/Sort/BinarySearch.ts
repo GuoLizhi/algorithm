@@ -1,3 +1,11 @@
+/**
+ * @author lizhi.guo@foxmail.com
+ * @source 二分搜索法
+ * @time   2019-10-26
+ *
+ * Time Complexity O(logN)
+ * Space Complexity O(1)
+ */
 function binarySearch (arr: number[], target: number): number {
   let l = 0
   let r = arr.length - 1 // 在[l...r]的范围里寻找target
