@@ -5,3 +5,4 @@
 2. [移除元素](./0027_remove_element.ts)
 3. [移动零](./0283_move_zeroes.ts)
 4. [两数之和 II - 输入有序数组](./0167_two_sum_ii_input_array_is_sorted.ts)
+5. [反转字符串](./0344_reverse_string.ts)

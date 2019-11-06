@@ -1,3 +1,4 @@
 dist/
 .idea/
 **/*.js
+.DS_Store
