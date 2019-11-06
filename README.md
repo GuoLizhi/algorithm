@@ -22,7 +22,7 @@
 - [x] [二分搜索树](./algorithm/BinarySearchTree)
 - [x] [深度优先搜索](./algorithm/DFS)
 - [x] [分治算法](./algorithm/DivideAndCouquer)
-- [x] [双索引算法](./algorithm/DoubleIndex)
+- [x] [双索引算法](./algorithm/TwoPointer)
 - [x] [动态规划](./algorithm/DynamicProgramming)
 - [x] [Hash表](./algorithm/HashTable)
 - [x] [堆](./algorithm/Heap)
