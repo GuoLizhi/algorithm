@@ -19,6 +19,7 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "noEmit": true,
-    "strictNullChecks": false
+    "strictNullChecks": false,
+    "downlevelIteration": true
   }
 }
