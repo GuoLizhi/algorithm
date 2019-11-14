@@ -1,3 +1,11 @@
+/**
+ * @author lizhi.guo@foxmail.com
+ * @source https://leetcode-cn.com/problems/remove-linked-list-elements/
+ * @time   2019-11-14
+ *
+ * Time Complexity O(n)
+ * Space Complexity O(1)
+ */
 interface ListNode {
   val: number
   next: ListNode
