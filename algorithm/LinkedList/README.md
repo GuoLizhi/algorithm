@@ -9,3 +9,4 @@
 5. [移除链表中的指定元素](./0203_remove_linked_list_elements.ts)
 6. [两两交换链表中的节点](./0024_swap_nodes_in_pairs.ts)
 7. [删除链表中的指定节点](./0237_delete_node_in_a_linked_list.ts)
+8. [删除链表中的倒数第几个节点](./0019_remove_nth_node_from_end_of_list.ts)
