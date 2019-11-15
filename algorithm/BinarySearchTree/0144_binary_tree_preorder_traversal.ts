@@ -13,7 +13,7 @@ interface TreeNode {
 }
 function preorderTraversal(root: TreeNode): number[] {
   if (root === null) {
-    return null;
+    return [];
   }
 
   const stack = [];
