@@ -8,3 +8,4 @@
 5. [反转二叉树](./0206_invert_binary_tree.ts)
 6. [路径总和](./0112_path_sum.ts)
 7. [路径总和iii](./0437_path_sum_iii.ts)
+8. [二叉树所有路径](./0257_binary_tree_paths.ts)
