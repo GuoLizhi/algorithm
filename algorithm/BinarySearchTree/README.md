@@ -6,3 +6,4 @@
 3. [二分搜索树中序遍历](./0094_binary_tree_inorder_traversal.ts)
 4. [求二叉树的最大深度](./0104_maximum_depth_of_binary_tree.ts)
 5. [反转二叉树](./0206_invert_binary_tree.ts)
+6. [路径总和](./0112_path_sum.ts)
