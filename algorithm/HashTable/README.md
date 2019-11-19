@@ -7,3 +7,5 @@ Hash Table
 3. [快乐数](./0202_happy_number.ts)
 4. [四数相加II](./0454_4sum_ii.ts)
 5. [回旋镖的数量](./0447_number_of_boomerangs.ts)
+6. [计数质数](./0204_count_primes.ts)
+7. [同构字符串](./0205_isomorphic_strings.ts)
