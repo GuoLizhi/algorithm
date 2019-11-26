@@ -9,3 +9,4 @@ Hash Table
 5. [回旋镖的数量](./0447_number_of_boomerangs.ts)
 6. [计数质数](./0204_count_primes.ts)
 7. [同构字符串](./0205_isomorphic_strings.ts)
+8. [存在重复元素II](./0219_contains_duplicate_ii.ts)
