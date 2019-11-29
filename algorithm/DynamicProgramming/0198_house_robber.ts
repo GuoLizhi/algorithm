@@ -2,6 +2,7 @@
  * @author lizhi.guo@foxmail.com
  * @source https://leetcode-cn.com/problems/house-robber/
  * @time   2019-10-29
+ * @description 动态规划方程：dp[n] = MAX(dp[n - 1], dp[n - 2] + num)
  *
  * Time Complexity O(n^2)
  * Space Complexity O(n)
