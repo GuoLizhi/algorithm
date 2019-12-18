@@ -1,7 +1,7 @@
 export default class MyArray<E> {
 
-  private data: E[];
-  private size: number = 0;
+  public data: E[];
+  public size: number = 0;
 
   // 构造函数，传入数组的容量capacity
   constructor(capacity = 10) {
@@ -137,65 +137,5 @@ export default class MyArray<E> {
 
     this.data = newData;
   }
-
-  toString(): string {
-    let res = '';
-    res += `Array: size = ${this.size}, capacity = ${this.getCapacity()};\n`;
-    res += '[';
-    for (let i = 0; i < this.size; i++) {
-      res += `${this.data[i]}`;
-      if (i !== this.size - 1) {
-        res += `, `
-      }
-    }
-    res += ']';
-    return res;
-  }
 }
-
-// let arr = new MyArray<number>(10);
-// arr.addFirst(1);
-// console.log(arr.toString()); // [1]
-
-// arr.addLast(2);
-// console.log(arr.toString()); // [1, 2]
-
-// arr.add(1, 100);
-// console.log(arr.toString()); // [1, 100, 2]
-
-// arr.removeFirst();
-// console.log(arr.toString()); // [100, 2]
-
-// arr.removeLast();
-// console.log(arr.toString()); // [100]
-
-// arr.remove(0);
-// console.log(arr.toString()); // []
-
-// arr.addLast(0);
-// arr.addLast(1);
-// arr.addLast(2);
-// arr.addLast(3);
-// arr.addLast(4);
-
-// arr.set(1, 100);
-// console.log(arr.toString()); // [0, 100, 2, 3, 4]
-
-// arr.addLast(5);
-// arr.addLast(5);
-// arr.addLast(5);
-// arr.addLast(5);
-// arr.addLast(5);
-// arr.addLast(5);
-// console.log(arr.toString()); // [0, 100, 2, 3, 4, 5, 5, 5, 5, 5, 5] 扩容 capacity = 20
-
-
-// arr.removeLast();
-// arr.removeLast();
-// arr.removeLast();
-// arr.removeLast();
-// arr.removeLast();
-// arr.removeLast();
-// arr.removeLast();
-// console.log(arr.toString());
 

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "rm -rf ./dist/ && tsc ./data-structure/*.ts --outDir ./dist -w",
-    "test": "jest"
+    "test": "jest --watch",
+    "coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
