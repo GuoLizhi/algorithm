@@ -10,7 +10,10 @@
  * Space Complexity O(m*n)
  */
 function uniquePaths(m: number, n: number) {
-  let arr: number[][];
+  let arr: number[][] = [];
+  for (let i = 0; i < m; i++) {
+      arr.push([]);
+  }
   for (let i = 0; i < m; i++) {
     arr[i][0] = 1;
   }
