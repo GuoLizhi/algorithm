@@ -20,6 +20,10 @@ class LinkedList<E> {
     return this.size === 0;
   }
 
+  getSize(): number {
+    return this.getSize();
+  }
+
   add(index: number, e: E): void {
     if (index < 0 || index > this.size) {
       throw new Error('Add failed. Illegal index.');
@@ -42,3 +46,5 @@ class LinkedList<E> {
     this.add(this.size, e);
   }
 }
+
+export default LinkedList;

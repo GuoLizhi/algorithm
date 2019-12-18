@@ -10,7 +10,7 @@ class Node<E> {
 }
 
 class BST<E> {
-  private root: Node<E> = null;
+  public root: Node<E> = null;
   private size: number = 0;
 
   // 获取二分搜索树节点个数
@@ -275,3 +275,5 @@ class BST<E> {
     }
   }
 }
+
+export default BST;

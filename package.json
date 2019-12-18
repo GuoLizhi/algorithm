@@ -4,16 +4,29 @@
   "description": "algorithm and data structure 算法和数据结构",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf ./dist/ && tsc ./data-structure/*.ts --outDir ./dist -w"
+    "build": "rm -rf ./dist/ && tsc ./data-structure/*.ts --outDir ./dist -w",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/GuoLizhi/algorithm.git"
   },
-  "author": "",
+  "author": "lizhi.guo@foxmail.com",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/GuoLizhi/algorithm/issues"
   },
-  "homepage": "https://github.com/GuoLizhi/algorithm#readme"
+  "homepage": "https://github.com/GuoLizhi/algorithm#readme",
+  "keywords": [],
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
+    "@babel/preset-typescript": "^7.7.4",
+    "@types/jest": "^24.0.23",
+    "jest": "^24.9.0"
+  },
+  "dependencies": {
+    "ts-jest": "^24.2.0",
+    "typescript": "^3.7.3"
+  }
 }
