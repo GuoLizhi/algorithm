@@ -1,26 +1,8 @@
-import MyArray from '../Array/Array';
 import { IStack } from './IStack';
+import LinkedList from '../LinkedList/LinkedList';
 
-export default class ArrayStack<E> implements IStack<E> {
-  public array: MyArray<E>;
-
-  /**
-   * 构造函数，传入栈的容量capacity
-   * @param {number} capacity 数组容量，默认10
-   */
-  constructor(capacity: number = 10) {
-    this.array = new MyArray<E>(capacity);
-  }
-
-  /**
-   * 获取栈容量（栈能总共能包含多少元素）
-   * Time Complexity O(1)
-   * Space Complexity O(1)
-   * @return {number}
-   */
-  getCapacity(): number {
-    return this.array.getCapacity();
-  }
+export default class LinkedListStack<E> implements IStack<E> {
+  public linkedlist = new LinkedList<E>();
 
   /**
    * 获取栈中当前存储元素的个数
@@ -29,7 +11,7 @@ export default class ArrayStack<E> implements IStack<E> {
    * @return {number}
    */
   getSize(): number {
-    return this.array.getSize();
+    return this.linkedlist.getSize();
   }
 
   /**
@@ -39,7 +21,7 @@ export default class ArrayStack<E> implements IStack<E> {
    * @return {boolean}
    */
   isEmpty(): boolean {
-    return this.array.isEmpty();
+    return this.linkedlist.isEmpty();
   }
 
   /**
@@ -50,7 +32,7 @@ export default class ArrayStack<E> implements IStack<E> {
    * @return {void}
    */
   push(e: E): void {
-    this.array.addLast(e);
+    this.linkedlist.addFirst(e);
   }
 
   /**
@@ -60,7 +42,7 @@ export default class ArrayStack<E> implements IStack<E> {
    * @return {E}
    */
   pop(): E {
-    return this.array.removeLast();
+    return this.linkedlist.removeFirst();
   }
 
   /**
@@ -70,6 +52,6 @@ export default class ArrayStack<E> implements IStack<E> {
    * @return {E}
    */
   peek(): E {
-    return this.array.getLast();
+    return this.linkedlist.getFirst();
   }
 }
