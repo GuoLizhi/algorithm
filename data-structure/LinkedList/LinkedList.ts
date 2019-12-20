@@ -187,4 +187,28 @@ export default class LinkedList<E> {
   removeLast(): E {
     return this.remove(this.size - 1);
   }
+
+  /**
+   * 删除链表中的元素e
+   * Time Complexity O(n)
+   * Space Complexity O(1)
+   * @param {E} e 要删除的元素e
+   * @return {E}
+   */
+  removeElement(e: E): void {
+    let prev: LinkedListNode<E> = this.dummyHead;
+    while (prev.next !== null) {
+      if (prev.next.e === e) {
+        break;
+      }
+      prev = prev.next;
+    }
+
+    if (prev.next !== null) {
+      let delNode = prev.next;
+      prev.next = delNode.next;
+      delNode.next = null;
+      this.size--;
+    }
+  }
 }
