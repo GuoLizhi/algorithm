@@ -8,7 +8,7 @@
       "es2017",
       "es2018",
       "es2019",
-      "DOM"
+      "dom"
     ],
     "allowJs": true,
     "skipLibCheck": true,
