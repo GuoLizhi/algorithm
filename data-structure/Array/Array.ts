@@ -231,5 +231,22 @@ export default class MyArray<E> {
 
     this.data = newData;
   }
+
+  /**
+   * 交换数组中的i, j两个元素
+   * Time Complexity O(1)
+   * Space Complexity O(1)
+   * @param {number} i 第i位置的元素
+   * @param {number} j 第j位置的元素
+   * @return {void}
+   */
+  swap(i: number, j: number): void {
+    if (i < 0 || j < 0 || i >= this.size || j >= this.size) {
+      throw new Error('Index is illegal.');
+    }
+    let temp = this.get(i);
+    this.set(i, this.get(j));
+    this.set(j, temp);
+  }
 }
 
