@@ -6,11 +6,6 @@
  * Time Complexity O(m+n)
  * Space Complexity O(n)
  */
-
-type ListNode = {
-  val: number
-  next: ListNode
-}
 function mergeTwoLists (l1: ListNode, l2: ListNode): ListNode {
   if (l1 === null) {
     return l2
