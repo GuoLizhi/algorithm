@@ -1,9 +1,9 @@
 import MyArray from '../Array/Array';
 
-class MaxHeap<E> {
+export default class MaxHeap<E> {
   public data: MyArray<E>;
 
-  constructor (capacity: number) {
+  constructor (capacity: number = 10) {
     this.data = new MyArray<E>(capacity);
   }
 
