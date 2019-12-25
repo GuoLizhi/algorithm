@@ -40,11 +40,16 @@ function __mergeSort(arr: number[], left: number, right: number): number[] {
   let mid = Math.floor(left + (right - left) / 2);
   __mergeSort(arr, left, mid);
   __mergeSort(arr, mid + 1, right);
-  return __merge(arr, left, mid, right);
+  // 处理近乎有序的数组
+  if (arr[mid] > arr[mid + 1]) {
+    return __merge(arr, left, mid, right);
+  } else {
+    return arr;
+  }
 }
 
 function mergeSort(arr: number[]): number[] {
   return __mergeSort(arr, 0, arr.length - 1);
 }
 
-console.log(mergeSort([4,3,2,1]));
+
