@@ -6,21 +6,21 @@
  * Time Complexity O(n)
  * Space Complexity O(1)
  */
-function plusOne (digits: number[]): number[] {
-  let start = digits.length - 1;
+export default function plusOne (digits: number[]): number[] {
+  let start = digits.length - 1
   while (start >= 0) {
     if (digits[start] + 1 < 10) {
-      digits[start] += 1;
-      return digits;
+      digits[start] += 1
+      return digits
     } else {
-      digits[start] = (digits[start] + 1) % 10;
-      start--;
+      digits[start] = (digits[start] + 1) % 10
+      start--
     }
   }
 
   if (digits[0] === 0) {
-    return [1, ...digits];
+    return [1, ...digits]
   } else {
-    return digits;
+    return digits
   }
 }
