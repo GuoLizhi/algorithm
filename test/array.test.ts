@@ -1,4 +1,4 @@
-import MyArray from '../data-structure/Array/Array';
+import MyArray from '../DataSturctureTypeScript/Array/Array';
 
 test('测试数组添加功能', () => {
   const arr = new MyArray<number>();

@@ -1,4 +1,4 @@
-import LinkedList from '../data-structure/LinkedList/LinkedList';
+import LinkedList from '../DataSturctureTypeScript/LinkedList/LinkedList';
 
 let linkedlist: LinkedList<number> = null;
 beforeEach(() => {

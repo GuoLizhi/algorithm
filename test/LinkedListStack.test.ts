@@ -1,4 +1,4 @@
-import LinkedListStack from '../data-structure/Stack/LinkedListStack';
+import LinkedListStack from '../DataSturctureTypeScript/Stack/LinkedListStack';
 
 let stack: LinkedListStack<number> = null;
 let actualStack: number[];

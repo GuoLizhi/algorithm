@@ -1,4 +1,4 @@
-import ArrayQueue from '../data-structure/Queue/ArrayQueue';
+import ArrayQueue from '../DataSturctureTypeScript/Queue/ArrayQueue';
 
 let queue: ArrayQueue<number> = null;
 let actualQueue: number[] = [];

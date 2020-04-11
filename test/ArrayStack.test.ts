@@ -1,4 +1,4 @@
-import ArrayStack from '../data-structure/Stack/ArrayStack';
+import ArrayStack from '../DataSturctureTypeScript/Stack/ArrayStack';
 
 let stack: ArrayStack<number> = null;
 let actualStack: number[];

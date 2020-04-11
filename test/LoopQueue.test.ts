@@ -1,4 +1,4 @@
-import LoopQueue from '../data-structure/Queue/LoopQueue';
+import LoopQueue from '../DataSturctureTypeScript/Queue/LoopQueue';
 
 let queue: LoopQueue<number> = null;
 beforeEach(() => {

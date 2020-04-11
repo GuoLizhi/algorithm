@@ -1,4 +1,4 @@
-import LinkedListQueue from '../data-structure/Queue/LinkedListQueue';
+import LinkedListQueue from '../DataSturctureTypeScript/Queue/LinkedListQueue';
 
 let queue: LinkedListQueue<number> = null;
 beforeEach(() => {
