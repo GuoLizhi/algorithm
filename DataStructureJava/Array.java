@@ -13,6 +13,14 @@ public class Array<E> {
         this(10);
     }
 
+    // 构函函数，传进来的是数组
+    public Array(E[] arr) {
+        data = (E[])new Object[arr.length];
+        for (int i = 0; i < arr.length; i++)
+            data[i] = arr[i];
+        size = arr.length;
+    }
+
     // 获取数组中有效元素的个数
     public int getSize() {
         return size;
@@ -65,6 +73,16 @@ public class Array<E> {
         if (index < 0 || index > size)
             throw new IllegalArgumentException("Get failed. Index is illegal.");
         return data[index];
+    }
+
+    // 获取数组的第一个元素
+    public E getFirst() {
+        return get(0);
+    }
+
+    // 获取数组的最后一个元素
+    public E getLast() {
+        return get(size - 1);
     }
 
     // Time Complexity O(1)
@@ -141,6 +159,14 @@ public class Array<E> {
             newData[i] = data[i];
         }
         data = newData;
+    }
+
+    public void swap(int i, int j) {
+        if (i < 0 || i >= size || j < 0 || j >= size)
+            throw new IllegalArgumentException("Index is illegal.");
+        E ret = data[i];
+        data[i] = data[j];
+        data[i] = ret;
     }
 
     // 覆盖父类的toString方法
