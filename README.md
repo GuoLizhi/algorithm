@@ -13,7 +13,7 @@
 使用数组实现的栈 | [ArrayStack](./DataStructureJava/ArrayStack.java) | [ArrayStack](./DataStructureTypeScript/ArrayStack.ts) |
 链表 | [LinkedList](./DataStructureJava/LinkedList.java) | [LinkedList](./DataStructureTypeScript/LinkedList.ts) |
 使用链表实现的队列 | [LinkedListQueue](./DataStructureJava/LinkedListQueue.java) | [LinkedListQueue](./DataStructureTypeScript/LinkedListQueue.ts) |
-使用链表实现的栈 | [LinkedListStack](./DataStructureJava/LinkedListStack.java) | [LinkedListStack]() |
+使用链表实现的栈 | [LinkedListStack](./DataStructureJava/LinkedListStack.java) | [LinkedListStack](./DataStructureTypeScript/LinkedListStack.ts) |
 循环队列 | [LoopQueue](./DataStructureJava/LoopQueue.java) | [LoopQueue]() |
 最大堆 | [MaxHeap](./DataStructureJava/MaxHeap.java) | [MaxHeap]() |
 优先队列 | [PriorityQueue](./DataStructureJava/PriorityQueue.java) | [PriorityQueue]() |
