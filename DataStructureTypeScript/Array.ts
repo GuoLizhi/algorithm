@@ -244,17 +244,5 @@ export default class MyArray<E> {
     res += ']';
     return res;
   }
-
-  static main() {
-    const arr = new MyArray<number>(5);
-    for (let i = 0; i < 10; i++) {
-      arr.addFirst(i)
-      console.log(arr.toString())
-    }
-  }
 }
-
-MyArray.main();
-
-
 
