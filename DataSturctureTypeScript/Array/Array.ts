@@ -14,7 +14,6 @@ export default class MyArray<E> {
   /**
    * 获取数组容量（数组能总共能包含多少元素）
    * Time Complexity O(1)
-   * Space Complexity O(1)
    * @return {number}
    */
   getCapacity(): number {
@@ -24,7 +23,6 @@ export default class MyArray<E> {
   /**
    * 获取数组中当前存储元素的个数
    * Time Complexity O(1)
-   * Space Complexity O(1)
    * @return {number}
    */
   getSize(): number {
@@ -34,7 +32,6 @@ export default class MyArray<E> {
   /**
    * 判断数组是否为空，即元素的个数是否为0
    * Time Complexity O(1)
-   * Space Complexity O(1)
    * @return {boolean}
    */
   isEmpty(): boolean {
@@ -43,8 +40,7 @@ export default class MyArray<E> {
 
   /**
    * 在数组中index位置添加一个元素
-   * Time Complexity O(n)
-   * Space Complexity O(1)
+   * 考虑到这里不是每次操作都会触发扩容，这里均摊到每次操作上的时间复杂度为O(1)
    * @param {number} index 要插入的位置
    * @param {E} e 要插入的元素
    * @return {void}
@@ -55,14 +51,12 @@ export default class MyArray<E> {
     }
 
     // 将数组的容量扩大为之前的二倍
-    if (this.size === this.getCapacity()) {
-      this.resize(this.getCapacity() * 2);
+    if (this.size === this.data.length) {
+      this.resize(this.data.length * 2);
     }
-
     for (let i = this.size - 1; i >= index; i--) {
       this.data[i + 1] = this.data[i];
     }
-
     this.data[index] = e;
     this.size++;
   }
@@ -70,7 +64,6 @@ export default class MyArray<E> {
   /**
    * 向所有元素之后添加一个元素
    * Time Complexity O(1)
-   * Space Complexity O(1)
    * @param {E} e 要插入的元素
    * @return {void}
    */
@@ -81,7 +74,6 @@ export default class MyArray<E> {
   /**
    * 向所有元素之前添加一个元素
    * Time Complexity O(n)
-   * Space Complexity O(1)
    * @param {E} e 要插入的元素
    * @return {void}
    */
@@ -92,7 +84,6 @@ export default class MyArray<E> {
   /**
    * 修改index索引位置元素为e
    * Time Complexity O(1)
-   * Space Complexity O(1)
    * @param {number} index 要插入元素的位置
    * @param {E} e 要插入的元素
    * @return {void}
@@ -107,7 +98,6 @@ export default class MyArray<E> {
   /**
    * 查找数组中是否含有元素e
    * Time Complexity O(n)
-   * Space Complexity O(1)
    * @param {E} e 要查找的元素
    * @return {boolean}
    */
@@ -139,8 +129,7 @@ export default class MyArray<E> {
   /**
    * 从数组中删除index位置的元素，并且返回删除元素
    * Time Complexity O(n)
-   * Space Complexity O(1)
-   * @param {number} index 要删除的元素
+   * @param {number} index 要删除的元素位置的索引
    * @return {E}
    */
   remove(index: number): E {
@@ -154,18 +143,17 @@ export default class MyArray<E> {
     }
     this.size--;
     this.data[this.size] = null;
-
+    // 当size == capacity / 4时，才将capacity减半。防止复杂度震荡
+    // data.length != 0 是因为不能常见capacity为0的数组
     if (this.size === Math.floor(this.data.length / 4) && Math.floor(this.data.length / 2) !== 0) {
       this.resize(Math.floor(this.data.length / 2));
     }
-
     return ret;
   }
 
   /**
    * 删除数组中的最后一个元素
    * Time Complexity O(1)
-   * Space Complexity O(1)
    * @return {E}
    */
   removeLast(): E {
@@ -175,7 +163,6 @@ export default class MyArray<E> {
   /**
    * 删除数组中的第一个元素
    * Time Complexity O(n)
-   * Space Complexity O(1)
    * @return {E}
    */
   removeFirst(): E {
@@ -199,7 +186,6 @@ export default class MyArray<E> {
   /**
    * 获取数组中的第一个元素
    * Time Complexity O(1)
-   * Space Complexity O(1)
    * @return {E}
    */
   getFirst() {
@@ -209,7 +195,6 @@ export default class MyArray<E> {
   /**
    * 获取数组中的最后一个元素
    * Time Complexity O(1)
-   * Space Complexity O(1)
    * @return {E}
    */
   getLast() {
@@ -219,7 +204,6 @@ export default class MyArray<E> {
   /**
    * 数组扩容，或者缩容操作
    * Time Complexity O(n)
-   * Space Complexity O(n)
    * @param {number} newCapacity 新的数组的容量
    * @return {void}
    */
@@ -235,7 +219,6 @@ export default class MyArray<E> {
   /**
    * 交换数组中的i, j两个元素
    * Time Complexity O(1)
-   * Space Complexity O(1)
    * @param {number} i 第i位置的元素
    * @param {number} j 第j位置的元素
    * @return {void}
@@ -244,9 +227,9 @@ export default class MyArray<E> {
     if (i < 0 || j < 0 || i >= this.size || j >= this.size) {
       throw new Error('Index is illegal.');
     }
-    let temp = this.get(i);
-    this.set(i, this.get(j));
-    this.set(j, temp);
+    let temp = this.data[i];
+    this.data[i] = this.data[j];
+    this.data[j] = temp;
   }
 }
 

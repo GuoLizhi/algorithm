@@ -8,7 +8,7 @@
 ### 数据结构
 数据结构 | Java版 |  TypeScript版  
 :-:|:-:|:-:
-数组 | [Array](./DataStructureJava/Array.java) | [Array]() |
+数组 | [Array](./DataStructureJava/Array.java) | [Array](./DataStructureTypeScript/Array.ts) |
 使用数组实现的队列 | [ArrayQueue](./DataStructureJava/ArrayQueue.java) | [ArrayQueue]() |
 使用数组实现的栈 | [ArrayStack](./DataStructureJava/ArrayStack.java) | [ArrayStack]() |
 链表 | [LinkedList](./DataStructureJava/LinkedList.java) | [LinkedList]() |
