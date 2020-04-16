@@ -113,7 +113,6 @@ export default class MyArray<E> {
   /**
    * 查找数组中元素e所在的索引，如果不存在，则返回-1
    * Time Complexity O(n)
-   * Space Complexity O(1)
    * @param {E} e 要查找的元素
    * @return {boolean}
    */
@@ -172,7 +171,6 @@ export default class MyArray<E> {
   /**
    * 获取index索引的元素
    * Time Complexity O(1)
-   * Space Complexity O(1)
    * @param {number} index 要获取元素的索引
    * @return {E}
    */
