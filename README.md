@@ -1,38 +1,47 @@
 ### 项目简介
-本项目主要介绍算法与数据结构，项目中的算法和数据结构均由`typescript`实现。使用`typescript`的主要目的在于它的强类型控制以及一些高级特性比如：泛型，接口。所有的数据结构均手动实现，不会依赖原生JS中的数组方法。并且在原生数组的基础上，扩展实现了一些比较有用方法，比如数组的`remove()`和`add()`。
+本项目主要分为两个部分
+- 基础数据结构：会使用Java和TypeScript实现底层的数据结构，并考虑数据结构中每个操作的时间复杂度
+- leetcode算法：算法主要会记录在本仓库的issue中，leetcode的每一个分类我都以标签的形式标记出来，欢迎参考
+
+> 学习算法是一个漫长的过程，没法靠突击，只能一步一步慢慢积累。
 
 ### 数据结构
-- [x] [数组](./data-structure/Array)
-- [x] [栈](./data-structure/Stack)
-- [x] [队列](./data-structure/Queue)
-- [x] [链表](./data-structure/LinkedList)
-- [x] [二分搜索树](./data-structure/BinarySearchTree)
-- [x] [集合](./data-structure/Set)
-- [x] [映射](./data-structure/Map)
-- [x] [堆](./data-structure/Heap)
-- [x] [平衡二叉树](./data-structure/BalancedBinaryTree)
-- [x] [线段树](./data-structure/SegmentTree)
-- [x] [字典树](./data-structure/Trie)
-- [x] [并查集](./data-structure/UnionFind)
+数据结构 | Java版 |  TypeScript版  
+:-:|:-:|:-:
+数组 | [Array](./DataStructureJava/Array.java) | [Array]() |
+使用数组实现的队列 | [ArrayQueue](./DataStructureJava/ArrayQueue.java) | [ArrayQueue]() |
+使用数组实现的栈 | [ArrayStack](./DataStructureJava/ArrayStack.java) | [ArrayStack]() |
+链表 | [LinkedList](./DataStructureJava/LinkedList.java) | [LinkedList]() |
+使用链表实现的队列 | [LinkedListQueue](./DataStructureJava/LinkedListQueue.java) | [LinkedListQueue]() |
+使用链表实现的栈 | [LinkedListStack](./DataStructureJava/LinkedListStack.java) | [LinkedListStack]() |
+循环队列 | [LoopQueue](./DataStructureJava/LoopQueue.java) | [LoopQueue]() |
+最大堆 | [MaxHeap](./DataStructureJava/MaxHeap.java) | [MaxHeap]() |
+优先队列 | [PriorityQueue](./DataStructureJava/PriorityQueue.java) | [PriorityQueue]() |
 
-### 算法
-- [x] [数组](./algorithm/Array)
-- [x] [回溯算法](./algorithm/BackTracking)
-- [x] [广度优先搜索](./algorithm/BFS)
-- [x] [二分搜索树](./algorithm/BinarySearchTree)
-- [x] [深度优先搜索](./algorithm/DFS)
-- [x] [分治算法](./algorithm/DivideAndCouquer)
-- [x] [双索引算法](./algorithm/TwoPointer)
-- [x] [动态规划](./algorithm/DynamicProgramming)
-- [x] [Hash表](./algorithm/HashTable)
-- [x] [堆](./algorithm/Heap)
-- [x] [链表](./algorithm/LinkedList)
-- [x] [队列](./algorithm/Queue)
-- [x] [递归](./algorithm/Recursion)
-- [x] [线段树](./algorithm/SegmentTree)
-- [x] [滑动窗口](./algorithm/SlidingWindow)
-- [x] [排序算法](./algorithm/Sort)
-- [x] [栈](./algorithm/Stack)
-- [x] [字符串](./algorithm/Strings)
-- [x] [字典树](./algorithm/Trie)
-- [x] [并查集](./algorithm/UnionFind)
+### leetcode按题目类型分类
+- [x] [数组](https://github.com/GuoLizhi/algorithm/labels/Array)
+- [x] [回溯算法](https://github.com/GuoLizhi/algorithm/labels/Backtracking)
+- [x] [广度优先搜索](https://github.com/GuoLizhi/algorithm/labels/BFS)
+- [x] [二分查找](https://github.com/GuoLizhi/algorithm/labels/Binary%20Search)
+- [x] [位运算](https://github.com/GuoLizhi/algorithm/labels/Bit%20Manipulation)
+- [x] [二叉树](https://github.com/GuoLizhi/algorithm/labels/Tree)
+- [x] [深度优先搜索](https://github.com/GuoLizhi/algorithm/labels/DFS)
+- [x] [双指针](https://github.com/GuoLizhi/algorithm/labels/Two%20Pointers)
+- [x] [动态规划](https://github.com/GuoLizhi/algorithm/labels/DP)
+- [x] [贪心算法](https://github.com/GuoLizhi/algorithm/labels/Greedy)
+- [x] [Hash表](https://github.com/GuoLizhi/algorithm/labels/HashTable)
+- [x] [链表](https://github.com/GuoLizhi/algorithm/labels/LinkedList)
+- [x] [数学运算](https://github.com/GuoLizhi/algorithm/labels/Math)
+- [x] [队列](https://github.com/GuoLizhi/algorithm/labels/Queue)
+- [x] [递归](https://github.com/GuoLizhi/algorithm/labels/Recursion)
+- [x] [集合Set](https://github.com/GuoLizhi/algorithm/labels/Set)
+- [x] [滑动窗口](https://github.com/GuoLizhi/algorithm/labels/Sliding%20Window)
+- [x] [栈](https://github.com/GuoLizhi/algorithm/labels/Stack)
+
+### leetcode按难易分类
+- [x] [easy](https://github.com/GuoLizhi/algorithm/labels/Easy)
+- [x] [medium](https://github.com/GuoLizhi/algorithm/labels/Medium)
+- [x] [hard](https://github.com/GuoLizhi/algorithm/labels/Hard)
+
+### 写在最后
+我的数据结构是从[刘宇波老师](https://github.com/liuyubobobo/)的[玩转数据结构](https://coding.imooc.com/class/207.html)开始学起的，算是我数据结构的启蒙老师，课程都是满满的干货，如果有需要，可以购买此课程看看
