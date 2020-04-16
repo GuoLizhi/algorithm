@@ -1,16 +1,4 @@
-class LinkedListNode<E> {
-  public e: E;
-  public next: LinkedListNode<E>;
-
-  constructor(e: E = null, next: LinkedListNode<E> = null) {
-    this.e = e;
-    this.next = next;
-  }
-
-  toString(): string {
-    return this.e.toString();
-  }
-}
+import LinkedListNode from './common/LinkedListNode';
 
 export default class LinkedList<E> {
   public dummyHead: LinkedListNode<E> = new LinkedListNode<E>();
