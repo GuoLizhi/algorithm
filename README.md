@@ -16,7 +16,7 @@
 使用链表实现的栈 | [LinkedListStack](./DataStructureJava/LinkedListStack.java) | [LinkedListStack](./DataStructureTypeScript/LinkedListStack.ts) |
 循环队列 | [LoopQueue](./DataStructureJava/LoopQueue.java) | [LoopQueue](./DataStructureTypeScript/LoopQueue.ts) |
 最大堆 | [MaxHeap](./DataStructureJava/MaxHeap.java) | [MaxHeap](./DataStructureTypeScript/MaxHeap.ts) |
-优先队列 | [PriorityQueue](./DataStructureJava/PriorityQueue.java) | [PriorityQueue]() |
+优先队列 | [PriorityQueue](./DataStructureJava/PriorityQueue.java) | [PriorityQueue](./DataStructureTypeScript/PriorityQueue.ts) |
 
 ### leetcode按题目类型分类
 - [x] [数组](https://github.com/GuoLizhi/algorithm/labels/Array)
