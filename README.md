@@ -17,6 +17,7 @@
 循环队列 | [LoopQueue](./DataStructureJava/LoopQueue.java) | [LoopQueue](./DataStructureTypeScript/LoopQueue.ts) |
 最大堆 | [MaxHeap](./DataStructureJava/MaxHeap.java) | [MaxHeap](./DataStructureTypeScript/MaxHeap.ts) |
 优先队列 | [PriorityQueue](./DataStructureJava/PriorityQueue.java) | [PriorityQueue](./DataStructureTypeScript/PriorityQueue.ts) |
+双向链表 | [DoubleLinkedList](./DataStructureJava/DoubleLinkedList.java) | [DoubleLinkedList](./DataStructureTypeScript/DoubleLinkedList.ts) |
 
 ### leetcode按题目类型分类
 - [x] [数组](https://github.com/GuoLizhi/algorithm/labels/Array)
