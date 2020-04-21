@@ -20,6 +20,7 @@
 双向链表 | [DoubleLinkedList](./DataStructureJava/DoubleLinkedList.java) | [DoubleLinkedList](./DataStructureTypeScript/DoubleLinkedList.ts) |
 二分搜索树 | [BST](./DataStructureJava/BST.java) | [BST](./DataStructureTypeScript/BST.ts) |
 基于二分搜索树的集合 | [BSTSet](./DataStructureJava/BSTSet.java) | [BSTSet](./DataStructureTypeScript/BSTSet.ts) |
+基于链表的集合 | [LinkedListSet](./DataStructureJava/LinkedListSet.java) | [LinkedListSet](./DataStructureTypeScript/LinkedListSet.ts) |
 
 ### leetcode按题目类型分类
 - [x] [数组](https://github.com/GuoLizhi/algorithm/labels/Array)
