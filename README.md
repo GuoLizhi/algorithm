@@ -7,7 +7,7 @@
 
 ### 数据结构
 数据结构 | Java版 |  TypeScript版  
-:-:|:-:|:-:
+-:|:-:|:-:
 数组 | [Array](./DataStructureJava/Array.java) | [Array](./DataStructureTypeScript/Array.ts) |
 使用数组实现的队列 | [ArrayQueue](./DataStructureJava/ArrayQueue.java) | [ArrayQueue](./DataStructureTypeScript/ArrayQueue.ts) |
 使用数组实现的栈 | [ArrayStack](./DataStructureJava/ArrayStack.java) | [ArrayStack](./DataStructureTypeScript/ArrayStack.ts) |
@@ -26,9 +26,9 @@
 线段树 | [SegmentTree](./DataStructureJava/SegmentTree.java) | [SegmentTree](./DataStructureTypeScript/SegmentTree.ts) |
 字典树 | [Trie](./DataStructureJava/Trie.java) | [Trie](./DataStructureTypeScript/Trie.ts) |
 并查集（基于数组索引） | [UnionFind](./DataStructureJava/UnionFind.java) | [UnionFind](./DataStructureTypeScript/UnionFind.ts) |
-字典树（基于树） | [UnionFind2](./DataStructureJava/UnionFind2.java) | [UnionFind2](./DataStructureTypeScript/UnionFind2.ts) |
-字典树（使用节点size优化） | [UnionFind3](./DataStructureJava/UnionFind3.java) | [UnionFind3](./DataStructureTypeScript/UnionFind3.ts) |
-字典树（使用rank优化） | [UnionFind4](./DataStructureJava/UnionFind4.java) | [UnionFind4](./DataStructureTypeScript/UnionFind4.ts) |
+并查集（基于树） | [UnionFind2](./DataStructureJava/UnionFind2.java) | [UnionFind2](./DataStructureTypeScript/UnionFind2.ts) |
+并查集（使用节点size优化） | [UnionFind3](./DataStructureJava/UnionFind3.java) | [UnionFind3](./DataStructureTypeScript/UnionFind3.ts) |
+并查集（使用rank优化） | [UnionFind4](./DataStructureJava/UnionFind4.java) | [UnionFind4](./DataStructureTypeScript/UnionFind4.ts) |
 
 ### leetcode按题目类型分类
 - [x] [数组](https://github.com/GuoLizhi/algorithm/labels/Array)
