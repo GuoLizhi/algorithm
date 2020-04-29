@@ -25,6 +25,10 @@
 基于二分搜索树的映射 | [BSTMap](./DataStructureJava/BSTMap.java) | [BSTMap](./DataStructureTypeScript/BSTMap.ts) |
 线段树 | [SegmentTree](./DataStructureJava/SegmentTree.java) | [SegmentTree](./DataStructureTypeScript/SegmentTree.ts) |
 字典树 | [Trie](./DataStructureJava/Trie.java) | [Trie](./DataStructureTypeScript/Trie.ts) |
+并查集（基于数组索引） | [UnionFind](./DataStructureJava/UnionFind.java) | [UnionFind](./DataStructureTypeScript/UnionFind.ts) |
+字典树（基于树） | [UnionFind2](./DataStructureJava/UnionFind2.java) | [UnionFind2](./DataStructureTypeScript/UnionFind2.ts) |
+字典树（使用节点size优化） | [UnionFind3](./DataStructureJava/UnionFind3.java) | [UnionFind3](./DataStructureTypeScript/UnionFind3.ts) |
+字典树（使用rank优化） | [UnionFind4](./DataStructureJava/UnionFind4.java) | [UnionFind4](./DataStructureTypeScript/UnionFind4.ts) |
 
 ### leetcode按题目类型分类
 - [x] [数组](https://github.com/GuoLizhi/algorithm/labels/Array)
