@@ -29,6 +29,7 @@
 并查集（基于树） | [UnionFind2](./DataStructureJava/UnionFind2.java) | [UnionFind2](./DataStructureTypeScript/UnionFind2.ts) |
 并查集（使用节点size优化） | [UnionFind3](./DataStructureJava/UnionFind3.java) | [UnionFind3](./DataStructureTypeScript/UnionFind3.ts) |
 并查集（使用rank优化） | [UnionFind4](./DataStructureJava/UnionFind4.java) | [UnionFind4](./DataStructureTypeScript/UnionFind4.ts) |
+平衡二叉树 | [AVLTree](./DataStructureJava/AVLTree.java) | [AVLTree](./DataStructureTypeScript/AVLTree.ts) |
 
 ### leetcode按题目类型分类
 - [x] [数组](https://github.com/GuoLizhi/algorithm/labels/Array)
