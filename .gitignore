@@ -1,6 +1,5 @@
 dist/
 .idea/
-**/*.js
 .DS_Store
 node_modules/
 coverage/
