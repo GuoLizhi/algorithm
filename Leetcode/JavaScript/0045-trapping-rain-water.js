@@ -29,3 +29,34 @@ var trap = function(height) {
 
   return result
 }
+
+
+/**
+ * 双指针的思路
+ * 时间复杂度O(n)
+ * 空间复杂度O(1)
+ * @param {number[]} height
+ * @return {number}
+ */
+var trap2 = function(height) {
+  const len = height.length
+  if (len === 0) return
+  let left = 0
+  let right = len - 1
+  let maxL = height[left]
+  let maxR = height[right]
+  let result = 0
+
+  while (left < right) {
+    if (maxL < maxR) {
+      result += (maxL - height[left])
+      left++
+      maxL = Math.max(maxL, height[left])
+    } else {
+      result += (maxR - height[right])
+      right--
+      maxR = Math.max(maxR, height[right])
+    }
+  }
+  return result
+}
