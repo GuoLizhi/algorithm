@@ -5,6 +5,9 @@ function ListNode(val, next) {
 }
 
 /**
+ * 双指针解法
+ * 时间复杂度O(n)
+ * 空间复杂度O(1)
  * @param {ListNode} head
  * @param {number} n
  * @return {ListNode}
